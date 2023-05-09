@@ -8,12 +8,7 @@
   }
 
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1,h2,h3,h4,h5,h6 {
     margin: 8px 0;
   }
 
@@ -24,9 +19,6 @@
   .spacer {
     flex: 1;
   }
-
-
-
 
   .user-list {
     position: fixed;
@@ -45,6 +37,64 @@
     cursor: pointer;
   }
 
+  @media screen and (max-width: 540px) {
+    input#search {
+      width:60px;
+      margin:0px 0px 0px 0px;
+      height:32px;
+      border-radius:20px;
+      border:1px solid rgb(237, 237, 237);
+    }
+
+    a.homeLink {
+      color: #3c75df;
+      font-weight: 600;
+      font-size: 50px;
+      padding-left: 10px;
+      text-decoration: none;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    .toolbar-right h1 {
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    .toolbar-right {
+      display: flex;
+      margin-right: 1%;
+    }
+  }
+
+  @media screen and (min-width: 541px) {
+    input#search {
+      width:155px;
+      margin:0px 0px 0px 0px;
+      height:32px;
+      border-radius:20px;
+      border:1px solid rgb(237, 237, 237);
+    }
+
+    a.homeLink {
+      color: #3c75df;
+      font-weight: 600;
+      font-size: 50px;
+      padding-left: 60px;
+      text-decoration: none;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    .toolbar-right h1 {
+      cursor: pointer;
+      font-size: 40px;
+    }
+
+    .toolbar-right {
+      display: flex;
+      margin-right: 15%;
+    }
+  }
+
   .toolbar {
     position: absolute;
     top: 0;
@@ -58,38 +108,12 @@
     font-weight: 600;
   }
 
-  .toolbar-right {
-    display: flex;
-    margin-right: 15%;
-  }
-
-  .toolbar-right h1 {
-    cursor: pointer;
-    font-size: 40px;
-  }
-
-  input#search {
-    width:155px;
-    margin:0px 0px 0px 0px;
-    height:32px;
-    border-radius:20px;
-    border:1px solid rgb(237, 237, 237);
-  }
 
   a,
   a:visited,
   a:hover {
     color: rgb(237, 237, 237);
     text-decoration: none;
-  }
-
-  a.homeLink {
-    color: #3c75df;
-    font-weight: 600;
-    font-size: 50px;
-    padding-left: 60px;
-    text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   }
 
   a.profile-btn {
@@ -112,7 +136,6 @@
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
     padding-top: 40px;
     padding-left: 30px;
@@ -120,10 +143,7 @@
   }
 
   .image {
-    /* width: 385px; */
-    /* height: 560px; */
-    /* max-width: 190px; */
-    margin: 40px;
+    margin: 20px;
     text-align: center;
   }
 
