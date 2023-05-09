@@ -1,5 +1,4 @@
-@media screen and (max-width: 2000px) {
-  .wrapper {
+.wrapper {
     background-color: rgb(18, 18, 18);
     color: rgb(237, 237, 237);
     width: 100%;
@@ -158,4 +157,3 @@
     text-align: center;
     padding: 10px;
   }
-}
